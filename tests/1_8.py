@@ -2,17 +2,17 @@ from selenium import webdriver
 import time
 
 try: 
-    link = "http://suninjuly.github.io/registration1.html"
+    link = "http://suninjuly.github.io/registration2.html"
     browser = webdriver.Chrome()
     browser.get(link)
 
-    first_name = browser.find_element_by_css_selector("input.first")
+    first_name = browser.find_element_by_css_selector(".first_block .first")
     first_name.send_keys("SOme text")
 
-    second_name = browser.find_element_by_css_selector("input.second")
+    second_name = browser.find_element_by_css_selector(".first_block .second")
     second_name.send_keys("dawdaw")
 
-    email = browser.find_element_by_css_selector("input.third")
+    email = browser.find_element_by_css_selector(".first_block .third")
     email.send_keys("dwadaw")
 
     button = browser.find_element_by_css_selector("button.btn")
