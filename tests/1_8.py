@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 try: 
-    link = "http://suninjuly.github.io/registration2.html"
+    link = "http://suninjuly.github.io/registration1.html"
     browser = webdriver.Chrome()
     browser.get(link)
 
@@ -29,5 +29,5 @@ try:
     assert "Congratulations! You have successfully registered!" == welcome_text
 
 finally:
-    time.sleep(10)
+    time.sleep(1)
     browser.quit()
